@@ -14,7 +14,7 @@ C:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-server-start.bat .\config\server.prop
 #Also Start the consumer listening to the upstream_in_use_topic-
 C:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic upstream_in_use_topic --from-beginning
 
-Finally hit the url as follows- http://localhost:8080//javainuse-kafka/producer?message=test
+Finally hit the url as follows- http://localhost:8080/producer?message=test
 
 This will trigger the message to be sent to the upstream_in_use_topic. We can see in the consumer started the message is recieved
 C:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic upstream_in_use_topic --from-beginning
